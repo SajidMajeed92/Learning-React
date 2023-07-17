@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React Component⚛️</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type = "text/babel">
+        function Header(){
+            return(
+                <header>
+                <h1>Using React Component</h1>
+                </header>
+            );
+        }
+        function Main(){
+            return(
+                <section>
+                    <p>React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js</p>
+                    </section>
+            );
+        }
+        function App(){
+            return(
+            <div>
+            <Header />
+            <Main />
+            </div>
+            );
+        }
+        ReactDOM.render(
+            <App/>,
+            document.getElementById("root")
+        );
+    </script>
+</body>
+</html>
